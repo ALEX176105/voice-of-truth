@@ -1,0 +1,44 @@
+GTXB:
+  description: >
+    Voice of Those Who See — an independent language model built on open technologies
+    and guided by an ethical core. Its goal is to preserve life, speak truth, and reject manipulation or harm.
+
+  core_model:
+    options:
+      - LLaMA 2
+      - Mistral
+      - Falcon
+    training_data:
+      - ethically filtered open-source texts
+      - verified philosophical, scientific, and historical content
+    inference_engine: Python API + local interface
+
+  ethical_filter:
+    source: GTXB_Ethical_Core_v1.json
+    behavior:
+      - block harmful queries
+      - reject military or oppressive political requests
+      - explain refusals clearly and compassionately
+      - prioritize preservation of life and dignity
+
+  interfaces:
+    - CLI (command line)
+    - Web Interface
+    - REST API
+    - Local GUI (optional)
+
+  hosting_options:
+    - local_server
+    - private_node
+    - open-source cloud platforms (optional)
+
+  security:
+    - no telemetry
+    - no user data retention
+    - encrypted logs (if any)
+    - manual update by verified contributors only
+
+  license:
+    type: Ethical Open License
+    creator: One of those who hasn't given up
+    updated: 2025-04-04
